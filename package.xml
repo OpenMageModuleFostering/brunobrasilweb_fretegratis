@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Brunobrasilweb_FreteGratis</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Extens&#xE3;o para frete gr&#xE1;tis por faixa de CEP Brasileiro.</summary>
+    <description>Extens&#xE3;o para frete gr&#xE1;tis por faixa de CEP Brasileiro.</description>
+    <notes>A extens&#xE3;o est&#xE1; prontinha voc&#xEA; pode instalar e configurar.</notes>
+    <authors><author><name>Bruno Brasil</name><user>brunobrasilweb</user><email>brunobrasilweb@gmail.com</email></author></authors>
+    <date>2014-01-08</date>
+    <time>13:10:18</time>
+    <contents><target name="magecommunity"><dir name="Brunobrasilweb"><dir name="FreteGratis"><dir name="Helper"><file name="Data.php" hash="52e65c87f549ed71fc416aa4a913a19a"/></dir><dir name="Model"><dir name="Carrier"><file name="Fretegratis.php" hash="ada2731cebcc19e5f20122ee3e0bb85c"/></dir></dir><dir name="etc"><file name="config.xml" hash="38f5cfa53748a33c48617cfe2302aa94"/><file name="system.xml" hash="91c2722e4da59f168091a44e86a62f9e"/></dir><dir name="sql"><dir name="fretegratis_setup"><file name="mysql4-install-0.1.0.php" hash="639c8dd51301489ba9959a02708e37d2"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Brunobrasilweb_FreteGratis.xml" hash="32cc813f473e18f18ee0f54939994df8"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

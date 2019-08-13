@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <carriers  translate="label" module="fretegratis">            
+            <groups>
+                <fretegratis translate="label"> 
+                    <label>Frete Grátis - Brunobrasilweb</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <model>fretegratis/carrier_fretegratis</model>
+                    <fields>                        
+                        <active translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </active>
+                        <title translate="label">
+                            <label>Titulo</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </title>
+                        <frete_gratis_por_faixa translate="label">
+                            <label>Frete Grátis por Faixa de CEP?</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </frete_gratis_por_faixa>
+                        <faixas_frete_gratis translate="label">
+                            <label>Faixas CEP do Frete Grátis</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>40</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><frete_gratis_por_faixa>1</frete_gratis_por_faixa></depends>
+                        </faixas_frete_gratis>
+                        <valor_pedido translate="label">
+                            <label>Valor Mínimo do Pedido</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>50</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment>Valor mínimo do pedido, se for vázio é ilimitado. Colocar no formato decimal.</comment>
+                        </valor_pedido>
+                        <sort_order translate="label">
+                            <label>Sort Order</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>60</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <sort_order>100</sort_order>
+                        </sort_order>
+                    </fields>
+                </fretegratis>
+            </groups>
+        </carriers>
+    </sections>
+</config>

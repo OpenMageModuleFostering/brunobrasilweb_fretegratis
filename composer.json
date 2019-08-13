@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Brunobrasilweb_FreteGratis",
+    "type": "magento-module",
+    "license": "Apache-License,-Version-2.0",
+    "homepage": "",
+    "description": "Extensão para frete grátis por faixa de CEP Brasileiro.",
+    "authors": [
+    {
+        "name": "Bruno Brasil",
+        "email": "brunobrasilweb@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

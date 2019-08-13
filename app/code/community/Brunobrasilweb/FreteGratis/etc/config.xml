@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Brunobrasilweb_FreteGratis>
+            <version>0.1.0</version>
+        </Brunobrasilweb_FreteGratis>
+    </modules>
+    <global>
+        <helpers>
+            <fretegratis>
+                <class>Brunobrasilweb_FreteGratis_Helper</class>
+            </fretegratis>
+        </helpers>
+        <resources>
+            <fretegratis_setup>
+                <setup>
+                    <module>Brunobrasilweb_FreteGratis</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </fretegratis_setup>
+            <fretegratis_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </fretegratis_write>
+            <fretegratis_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </fretegratis_read>
+        </resources>
+    </global>    
+    <default>
+        <carriers>
+            <fretegratis>
+                <active>1</active>
+                <model>Brunobrasilweb_FreteGratis_Model_Carrier_Fretegratis</model>
+                <title>Frete Grátis</title>
+                <sort_order>0</sort_order>
+            </fretegratis>
+        </carriers>
+    </default>
+</config> 
